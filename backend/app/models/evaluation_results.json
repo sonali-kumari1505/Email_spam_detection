@@ -1,0 +1,223 @@
+{
+    "timestamp": "2026-11-25T19:00:37Z",
+    "test_dataset_size": 1034,
+    "ham_samples": 903,
+    "spam_samples": 131,
+    "systems": {
+        "multinomial_nb": {
+            "key": "multinomial_nb",
+            "display_name": "Multinomial Naive Bayes",
+            "type": "individual",
+            "color": "#3b82f6",
+            "metrics": {
+                "accuracy": 0.9797,
+                "precision": 0.9741,
+                "recall": 0.8626,
+                "f1_score": 0.915
+            },
+            "confusion_matrix": {
+                "true_negative": 900,
+                "false_positive": 3,
+                "false_negative": 18,
+                "true_positive": 113,
+                "raw_matrix": [
+                    [
+                        900,
+                        3
+                    ],
+                    [
+                        18,
+                        113
+                    ]
+                ]
+            }
+        },
+        "linear_svc": {
+            "key": "linear_svc",
+            "display_name": "Linear Support Vector Machine",
+            "type": "individual",
+            "color": "#8b5cf6",
+            "metrics": {
+                "accuracy": 0.9787,
+                "precision": 0.9291,
+                "recall": 0.9008,
+                "f1_score": 0.9147
+            },
+            "confusion_matrix": {
+                "true_negative": 894,
+                "false_positive": 9,
+                "false_negative": 13,
+                "true_positive": 118,
+                "raw_matrix": [
+                    [
+                        894,
+                        9
+                    ],
+                    [
+                        13,
+                        118
+                    ]
+                ]
+            }
+        },
+        "logistic_regression": {
+            "key": "logistic_regression",
+            "display_name": "Logistic Regression",
+            "type": "individual",
+            "color": "#10b981",
+            "metrics": {
+                "accuracy": 0.9594,
+                "precision": 0.9785,
+                "recall": 0.6947,
+                "f1_score": 0.8125
+            },
+            "confusion_matrix": {
+                "true_negative": 901,
+                "false_positive": 2,
+                "false_negative": 40,
+                "true_positive": 91,
+                "raw_matrix": [
+                    [
+                        901,
+                        2
+                    ],
+                    [
+                        40,
+                        91
+                    ]
+                ]
+            }
+        },
+        "decision_tree": {
+            "key": "decision_tree",
+            "display_name": "Decision Tree Classifier",
+            "type": "individual",
+            "color": "#f59e0b",
+            "metrics": {
+                "accuracy": 0.9613,
+                "precision": 0.864,
+                "recall": 0.8244,
+                "f1_score": 0.8438
+            },
+            "confusion_matrix": {
+                "true_negative": 886,
+                "false_positive": 17,
+                "false_negative": 23,
+                "true_positive": 108,
+                "raw_matrix": [
+                    [
+                        886,
+                        17
+                    ],
+                    [
+                        23,
+                        108
+                    ]
+                ]
+            }
+        },
+        "voting_ensemble": {
+            "key": "voting_ensemble",
+            "display_name": "Hard Majority Voting Ensemble",
+            "type": "ensemble",
+            "color": "#ef4444",
+            "metrics": {
+                "accuracy": 0.9816,
+                "precision": 0.9828,
+                "recall": 0.8702,
+                "f1_score": 0.9231
+            },
+            "confusion_matrix": {
+                "true_negative": 901,
+                "false_positive": 2,
+                "false_negative": 17,
+                "true_positive": 114,
+                "raw_matrix": [
+                    [
+                        901,
+                        2
+                    ],
+                    [
+                        17,
+                        114
+                    ]
+                ]
+            }
+        }
+    },
+    "error_analysis": {
+        "multinomial_nb": {
+            "false_positive_count": 3,
+            "false_negative_count": 18,
+            "false_positive_samples": [
+                "K k:) sms chat with me.",
+                "K:)eng rocking in ashes:)",
+                "I (Career Tel) have added u as a contact on INDYAROCKS.COM to send FREE SMS. To remove from phonebook - sms NO to  &lt;#&gt;"
+            ],
+            "false_negative_samples": [
+                "Thanks for the Vote. Now sing along with the stars with Karaoke on your mobile. For a FREE link just reply with SING now.",
+                "Send a logo 2 ur lover - 2 names joined by a heart. Txt LOVE NAME1 NAME2 MOBNO eg LOVE ADAM EVE 07123456789 to 87077 Yahoo! POBox36504W45WQ TxtNO 4 no ads 150p.",
+                "Hi if ur lookin 4 saucy daytime fun wiv busty married woman Am free all next week Chat now 2 sort time 09099726429 JANINExx Calls\u00a31/minMobsmoreLKPOBOX177HP51FL"
+            ]
+        },
+        "linear_svc": {
+            "false_positive_count": 9,
+            "false_negative_count": 13,
+            "false_positive_samples": [
+                "Plz note: if anyone calling from a mobile Co. &amp; asks u to type # &lt;#&gt;  or # &lt;#&gt; . Do not do so. Disconnect the call,coz it iz an attempt of 'terrorist' to make use of the sim card no. Itz confirmd by nokia n motorola n has been verified by CNN IBN.",
+                "I am waiting machan. Call me once you free.",
+                "Sir, i am waiting for your call, once free please call me."
+            ],
+            "false_negative_samples": [
+                "Want explicit SEX in 30 secs? Ring 02073162414 now! Costs 20p/min Gsex POBOX 2667 WC1N 3XX",
+                "You will recieve your tone within the next 24hrs. For Terms and conditions please see Channel U Teletext Pg 750",
+                "Missed call alert. These numbers called but left no message. 07008009200"
+            ]
+        },
+        "logistic_regression": {
+            "false_positive_count": 2,
+            "false_negative_count": 40,
+            "false_positive_samples": [
+                "It\u2018s \u00a36 to get in, is that ok?",
+                "Where are you call me."
+            ],
+            "false_negative_samples": [
+                "Your unique user ID is 1172. For removal send STOP to 87239 customer services 08708034412",
+                "Thanks for the Vote. Now sing along with the stars with Karaoke on your mobile. For a FREE link just reply with SING now.",
+                "Want explicit SEX in 30 secs? Ring 02073162414 now! Costs 20p/min Gsex POBOX 2667 WC1N 3XX"
+            ]
+        },
+        "decision_tree": {
+            "false_positive_count": 17,
+            "false_negative_count": 23,
+            "false_positive_samples": [
+                "Lemme know when I can swing by and pick up, I'm free basically any time after 1 all this semester",
+                "Nvm... I'm going to wear my sport shoes anyway... I'm going to be late leh.",
+                "If anyone calls for a treadmill say you'll buy it. Make sure its working. I found an ad on Craigslist selling for $ &lt;#&gt; ."
+            ],
+            "false_negative_samples": [
+                "Want explicit SEX in 30 secs? Ring 02073162414 now! Costs 20p/min Gsex POBOX 2667 WC1N 3XX",
+                "You will recieve your tone within the next 24hrs. For Terms and conditions please see Channel U Teletext Pg 750",
+                "Hi if ur lookin 4 saucy daytime fun wiv busty married woman Am free all next week Chat now 2 sort time 09099726429 JANINExx Calls\u00a31/minMobsmoreLKPOBOX177HP51FL"
+            ]
+        },
+        "voting_ensemble": {
+            "false_positive_count": 2,
+            "false_negative_count": 17,
+            "false_positive_samples": [
+                "I (Career Tel) have added u as a contact on INDYAROCKS.COM to send FREE SMS. To remove from phonebook - sms NO to  &lt;#&gt;",
+                "Your bill at 3 is \u00a333.65 so thats not bad!"
+            ],
+            "false_negative_samples": [
+                "Want explicit SEX in 30 secs? Ring 02073162414 now! Costs 20p/min Gsex POBOX 2667 WC1N 3XX",
+                "You will recieve your tone within the next 24hrs. For Terms and conditions please see Channel U Teletext Pg 750",
+                "Hi if ur lookin 4 saucy daytime fun wiv busty married woman Am free all next week Chat now 2 sort time 09099726429 JANINExx Calls\u00a31/minMobsmoreLKPOBOX177HP51FL"
+            ]
+        }
+    },
+    "charts": {
+        "accuracy_chart": "accuracy_comparison.png",
+        "metrics_chart": "metrics_comparison.png",
+        "confusion_matrices_chart": "confusion_matrices.png"
+    }
+}

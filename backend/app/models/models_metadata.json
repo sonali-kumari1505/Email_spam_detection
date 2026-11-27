@@ -1,0 +1,80 @@
+{
+    "train_samples": 4135,
+    "test_samples": 1034,
+    "random_state": 42,
+    "feature_extraction": "TF-IDF (unigrams + bigrams, min_df=2, sublinear_tf=True)",
+    "models": {
+        "multinomial_nb": {
+            "display_name": "Multinomial Naive Bayes",
+            "file_name": "multinomial_nb.joblib",
+            "training_duration_seconds": 0.1978,
+            "metrics": {
+                "accuracy": 0.9797,
+                "precision": 0.9741,
+                "recall": 0.8626,
+                "f1_score": 0.915
+            },
+            "confusion_matrix": {
+                "true_negative": 900,
+                "false_positive": 3,
+                "false_negative": 18,
+                "true_positive": 113
+            },
+            "description": "Probabilistic classifier applying Bayes' theorem with strong feature independence assumptions."
+        },
+        "linear_svc": {
+            "display_name": "Linear Support Vector Machine (LinearSVC)",
+            "file_name": "linear_svc.joblib",
+            "training_duration_seconds": 0.3052,
+            "metrics": {
+                "accuracy": 0.9787,
+                "precision": 0.9291,
+                "recall": 0.9008,
+                "f1_score": 0.9147
+            },
+            "confusion_matrix": {
+                "true_negative": 894,
+                "false_positive": 9,
+                "false_negative": 13,
+                "true_positive": 118
+            },
+            "description": "Maximal margin hyperplane classifier calibrated via CalibratedClassifierCV to provide probabilistic estimates."
+        },
+        "logistic_regression": {
+            "display_name": "Logistic Regression",
+            "file_name": "logistic_regression.joblib",
+            "training_duration_seconds": 0.2459,
+            "metrics": {
+                "accuracy": 0.9594,
+                "precision": 0.9785,
+                "recall": 0.6947,
+                "f1_score": 0.8125
+            },
+            "confusion_matrix": {
+                "true_negative": 901,
+                "false_positive": 2,
+                "false_negative": 40,
+                "true_positive": 91
+            },
+            "description": "Discriminative linear model estimating class posterior probabilities via the logistic sigmoid function."
+        },
+        "decision_tree": {
+            "display_name": "Decision Tree Classifier",
+            "file_name": "decision_tree.joblib",
+            "training_duration_seconds": 0.465,
+            "metrics": {
+                "accuracy": 0.9613,
+                "precision": 0.864,
+                "recall": 0.8244,
+                "f1_score": 0.8438
+            },
+            "confusion_matrix": {
+                "true_negative": 886,
+                "false_positive": 17,
+                "false_negative": 23,
+                "true_positive": 108
+            },
+            "description": "Non-linear hierarchical rule-based classifier partitioning feature space via Gini impurity."
+        }
+    }
+}

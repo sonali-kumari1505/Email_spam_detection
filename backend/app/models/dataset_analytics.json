@@ -1,0 +1,117 @@
+{
+    "raw_dataset": {
+        "total_messages": 5572,
+        "ham_count": 4825,
+        "spam_count": 747,
+        "ham_percentage": 86.59,
+        "spam_percentage": 13.41,
+        "duplicate_records": 403
+    },
+    "cleaned_dataset": {
+        "total_messages": 5169,
+        "ham_count": 4516,
+        "spam_count": 653,
+        "ham_percentage": 87.37,
+        "spam_percentage": 12.63,
+        "train_samples": 4135,
+        "test_samples": 1034
+    },
+    "length_statistics": {
+        "ham": {
+            "mean_characters": 71.48,
+            "median_characters": 52.0,
+            "mean_words": 14.31,
+            "median_words": 11.0
+        },
+        "spam": {
+            "mean_characters": 138.67,
+            "median_characters": 149.0,
+            "mean_words": 23.91,
+            "median_words": 25.0
+        }
+    },
+    "top_spam_words": [
+        {
+            "word": "call",
+            "count": 355
+        },
+        {
+            "word": "free",
+            "count": 224
+        },
+        {
+            "word": "txt",
+            "count": 163
+        },
+        {
+            "word": "ur",
+            "count": 144
+        },
+        {
+            "word": "mobile",
+            "count": 127
+        },
+        {
+            "word": "text",
+            "count": 125
+        },
+        {
+            "word": "stop",
+            "count": 123
+        },
+        {
+            "word": "claim",
+            "count": 113
+        },
+        {
+            "word": "reply",
+            "count": 104
+        },
+        {
+            "word": "prize",
+            "count": 93
+        }
+    ],
+    "top_ham_words": [
+        {
+            "word": "get",
+            "count": 305
+        },
+        {
+            "word": "ok",
+            "count": 288
+        },
+        {
+            "word": "go",
+            "count": 252
+        },
+        {
+            "word": "ur",
+            "count": 247
+        },
+        {
+            "word": "call",
+            "count": 238
+        },
+        {
+            "word": "know",
+            "count": 237
+        },
+        {
+            "word": "good",
+            "count": 235
+        },
+        {
+            "word": "like",
+            "count": 234
+        },
+        {
+            "word": "got",
+            "count": 233
+        },
+        {
+            "word": "come",
+            "count": 230
+        }
+    ]
+}
